@@ -1,0 +1,22 @@
+{
+  "name": "hello-webpack4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx webpack --mode=development",
+    "build": "npx webpack --mode=production"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "webpack": "^4.29.3",
+    "webpack-cli": "^3.2.3"
+  },
+  "dependencies": {
+    "@babel/plugin-transform-arrow-functions": "^7.2.0",
+    "babel-loader": "^8.0.5"
+  }
+}
