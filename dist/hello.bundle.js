@@ -93,7 +93,11 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("const greet = function () {\n  console.log('gretting1111');\n};\n\ngreet();\n\n//# sourceURL=webpack:///./src/hello.js?");
+var greet = function greet() {
+  console.log('gretting1111');
+};
+
+greet();
 
 /***/ })
 
