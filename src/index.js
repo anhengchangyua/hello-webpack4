@@ -1,3 +1,4 @@
+import App from './App';
 // import "@babel/polyfill";
 // import person from './lib';
 
@@ -20,13 +21,13 @@
 // }
 
 // Uncaught ReferenceError: regeneratorRuntime is not defined
-async function getPosts() {
-  const response = await fetch('https://jsonplaceholder.typicode.com/posts');
-  const data = await response.json();
-  return data;
-}
+// async function getPosts() {
+//   const response = await fetch('https://jsonplaceholder.typicode.com/posts');
+//   const data = await response.json();
+//   return data;
+// }
 
-getPosts().then(posts => console.log(posts));
+// getPosts().then(posts => console.log(posts));
 
 // 可以运行
 // Object.assign({});

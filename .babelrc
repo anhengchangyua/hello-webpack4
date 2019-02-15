@@ -6,6 +6,12 @@
         "debug": true,
         "useBuiltIns": "usage"
       }
+    ],
+    [
+      "@babel/preset-react",
+      {
+        "development": true
+      }
     ]
   ],
   "plugins": [
