@@ -1,5 +1,5 @@
 const path = require('path');
-
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   mode: 'development',
   // entry: './src/index.js',
@@ -7,7 +7,8 @@ module.exports = {
   entry: { app: './src/index.js', hello: './src/hello.js' },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: '[name].bundle.js',
+    // filename: '[name].bundle.js',
+    filename: '[name]-[hash].bundle.js',
   },
   devtool: false, //开发者模式
   module: {
@@ -32,4 +33,18 @@ module.exports = {
       },
     ],
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      title: 'Admin',
+      filename: 'admin.html',
+      template: 'public/index.html',
+      chunks: ['hello'],
+    }),
+    new HtmlWebpackPlugin({
+      title: 'Index',
+      filename: 'index.html',
+      template: 'public/index.html',
+      chunks: ['app'],
+    }),
+  ],
 };
