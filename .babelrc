@@ -3,14 +3,14 @@
     [
       "@babel/preset-env",
       {
-        "debug": true,
+        "debug": false,
         "useBuiltIns": "usage"
       }
     ],
     [
       "@babel/preset-react",
       {
-        "development": true
+        "development": false
       }
     ]
   ],
